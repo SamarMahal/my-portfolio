@@ -1,4 +1,5 @@
 // components/Contact.js
+import Link from 'next/link';
 import React from 'react';
 
 const Contact = () => {
@@ -66,12 +67,14 @@ const Contact = () => {
                         ></textarea>
                     </div>
                     <div className="flex items-center justify-between">
+                        <Link href="mailto:samardeepsingh@edu.sait.ca" >
                         <button
                             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                             type="button"
                         >
                             Send Message
                         </button>
+                        </Link>
                     </div>
                 </form>
             </div>
